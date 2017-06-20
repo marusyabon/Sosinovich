@@ -1,0 +1,149 @@
+<!DOCTYPE HTML> 
+<html>
+<head>
+	<meta charset='utf-8'>
+    <title>O.Sosinovich</title>
+	<link rel="shortcut icon" href="img/favicon.png" type="image/png">
+	<link rel='stylesheet' href='style/reset.css'/>
+	<link rel="stylesheet" href="style/ui.totop.css" />
+	<link rel='stylesheet' href='style/style.css'/>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="script/easing.js" ></script>
+	<script type="text/javascript" src="script/jquery.ui.totop.js"></script>
+	<script type = 'text/javascript' src = 'script/script.js'></script>
+
+</head>
+<body>
+							<!--Предзагрузчик-->
+	<div id="preloader">
+		<div class='demo'>
+			<div class='circle'>
+				<div class='inner'></div>
+			</div>
+			<div class='circle'>
+				<div class='inner'></div>
+			</div>
+			<div class='circle'>
+				<div class='inner'></div>
+			</div>
+			<div class='circle'>
+				<div class='inner'></div>
+			</div>
+			<div class='circle'>
+				<div class='inner'></div>
+			</div>
+		</div>
+	</div>
+							<!--Аудио-->
+	<audio id="player" loop autoplay> 
+		<source src="music.mp3">
+	</audio>
+							<!--Верхняя заставка с анимацией-->
+	<div id="zastavka">
+		<div class="animatiya">
+			<iframe width="805" height="305" src="canvas/canvas.html">
+			</iframe>	
+		</div>
+							<!--кнопка вниз-->
+		<div id='scrollDown'><img src="img/down_2.png" alt=''></div>
+	</div>
+
+	<div id="basicContent">
+	
+	<header>
+		<a href='#allContent'><img src="img/logo.png" alt='logo'></a>
+		
+		<div id="content">
+			<ul>
+			<li><a href='#aboutMe'>Обо мне </a></li>
+			<li class="padLeft"><a href='#myFo'>Мои работы</a></li>
+			<li class="padLeft"><a href='#contacts'>Контакты</a></li>
+			</ul>
+		</div>
+	</header>
+							<!--Форма обратной связи-->
+		<div id = 'fon'></div>			<!--фон формы-->
+		
+		<div id ='formaZapisy'>
+			<img src='img/close.png' alt='close'>	
+			<div id='section'>
+			<form name="forma" onsubmit="return validate(this)">
+				<input type="text" name="ima" placeholder="Ваше имя">
+				<input type="text" name="fone" placeholder="Номер телефона">
+				<input type="email" name="mail" placeholder="e-mail">
+				<textarea placeholder="Ваше сообщение"></textarea>
+				<input  type="submit" id="submit" value="Отправить">
+			</form>
+			</div>
+		</div>
+		
+		
+		<div id="allContent">
+
+			<div id="aboutMe">
+
+				<img src="img/me.png" alt="It's me!">
+
+				<p class="leftText">Think of all the beauty still left around you and be happy</p>
+				<p class="leftText">Думай о красоте окружающего тебя мира и будь счастлива</p>
+				<p class="leftText">Анна Франк</p>
+				<p class="myName">- это я, Ольга Сосинович </p>
+				<p class="aboutMe">Я родилась 8 февраля 1987 года в д.Заостровечье Минской области Клецкого района.<br>
+					В 2010 - Окончила Белорусский Государственный Педагогический Университет <br>им. Максима Танка- педагог/преподаватель изобразительного искусства<br>
+					В 2016- Окончила Белорусскую Государственную Академию Искусств-графический дизайн.<br>
+					В настоящее время живу и работаю в г. Минске.<br>
+					Занимаюсь графикой, живописью, полиграфическим дизайном. Вот примеры моих работ:</p>
+			
+			</div>
+									<!--Блоки с примерами работ-->
+			<div id="myFo">
+				<div class="obertka">
+					<img src="img/foto_1.png" alt="It's me!">
+					<div class='maska'>
+					<h4>Акрил</h4>
+					<a href='index_galary.html'>Перейти в галерею</a>
+					</div>
+				</div>
+				<div class="obertka">
+					<img src="img/foto_2.png" alt="It's me!">
+					<div class='maska'>
+					<h4>Акрил</h4>
+					<a href='index_galary.html'>Перейти в галерею</a>
+					</div>
+				</div>
+				<div class="obertka">
+					<img src="img/foto_3.png" alt="It's me!">
+					<div class='maska'>
+					<h4>Карандаш</h4>
+					<a href='index_galary.html'>Перейти в галерею</a>
+					</div>
+				</div>
+				
+			</div>
+								<!--Кнока Связаться со мной-->
+			<div id = "svyaz">
+				<p>Связаться со мной</p>
+			</div>
+			
+			<div class="clear"></div>
+								<!--кнопка вкл/выкл звук-->
+			<div id="music"><img src='img/sound.png' alt='pause' title="pause"></div>
+			<div class="clear"></div>
+			
+			<footer>
+				<div id="contacts">
+					<ul>
+						<li>© 2017 Marina Bandarenka</li>
+						<li class='firstPict'><a href='https://vk.com/o.sosinovich'><img src='img/vk.png' alt='vk' title='vk'></a></li>
+						<li><a href='https://www.instagram.com'><img src='img/inst.png' alt='instagram' title='instagram'></a></li>
+						<li><a href='https://www.skype.com/ru/'><img src='img/skype.png' alt='skype' title='skype'></a></li>
+						<li id='os'><img src='img/os.png' alt='обратная связь' title='обратная связь'></li>
+						<li>Tel: +375 44 7100119</li>
+					</ul>		
+				</div>
+			</footer>
+		</div>
+
+	</div>
+</body>
+</html>

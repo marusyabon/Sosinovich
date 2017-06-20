@@ -1,0 +1,77 @@
+<!DOCTYPE HTML> 
+<html>
+<head>
+	<meta charset='utf-8'>
+    <title>O.Sosinovich
+	</title>
+	<link rel="shortcut icon" href="img/favicon.png" type="image/png">
+	<link rel='stylesheet' href='style/reset.css'/>
+	<link rel='stylesheet' href='style/style.css'/>
+	<link rel='stylesheet' href='style/style_test.css'/>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type = 'text/javascript' src = 'script/script.js'></script>
+	<script type = 'text/javascript' src = 'script/script_galary.js'></script>
+	
+</head>
+<body>	
+	<header>
+		<a href='index.html'><img src="img/logo.png" alt='logo'></a>
+		<p>несколько моих работ...</p>
+	</header>
+	<div id = 'fon'></div>
+		
+		<div id ='formaZapisy'>
+			<img src='img/close.png' alt='close'>	
+			<section>
+			<form name="forma" onsubmit="return validate(this)">
+				<input type="text" name="ima" placeholder="Ваше имя">
+				<input type="text" name="fone" placeholder="Номер телефона">
+				<input type="email" name="mail" placeholder="e-mail">
+				<textarea placeholder="Ваше сообщение"></textarea>
+				<input  type="submit" id="submit" value="Отправить">
+			</form>
+			</section>
+		</div>
+	
+		
+	<div id="galary">
+	
+		<span class='paddingright paddingleft'><img src="img/image_1.jpg" alt=''></span>
+		<span class='paddingright'><img src="img/image_2.jpg" alt=''></span>
+		<span class='paddingright'><img src="img/image_3.jpg" alt=''></span>
+		
+		<img src="img/image_4.jpg" alt=''>
+		
+		<span class='paddingright paddingleft'><img src="img/image_5.jpg" alt=''></span>
+		<span class='paddingright'><img src="img/image_6.jpg" alt=''></span>
+		<span class='paddingright'><img src="img/image_7.jpg" alt=''></span>
+		<img src="img/image_8.jpg" alt=''>
+		<span class='paddingright paddingleft'><img src="img/image_9.jpg" alt=''></span>
+		<span class='paddingright'><img src="img/image_10.jpg" alt=''></span>
+		<span class='paddingright'><img src="img/image_11.jpg" alt=''></span>
+		
+		<img src="img/image_12.jpg" alt=''>
+		<p>...и маленький тест, угадай художника:)<a href='index_test.html'>пройти тест</a></p>	
+	</div>
+	
+	<div id = "svyaz">	
+		<p>Связаться со мной</p>
+	</div>
+	<a href="#" onclick="history.back();return false;"><div id="goBack"></div></a>
+	
+	<footer>
+		<div id="contacts">
+			<ul>
+				<li>© 2017 Marina Bandarenka</li>
+				<li class='firstPict'><a href='https://vk.com/o.sosinovich'><img src='img/vk.png' alt='vk' title='vk'></a></li>
+				<li><a href='https://www.instagram.com'><img src='img/inst.png' alt='instagram' title='instagram'></a></li>
+				<li><a href='https://www.skype.com/ru/'><img src='img/skype.png' alt='skype' title='skype'></a></li>
+				<li id='os'><img src='img/os.png' alt='обратная связь' title='обратная связь'></a></li>
+				<li>Tel: +375 44 7100119</li>
+			</ul>
+		</div>
+	</footer>
+
+
+</body>
+</html>
